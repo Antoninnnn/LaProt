@@ -22,7 +22,7 @@ These changes often depend on specific motifs or residue positions in the sequen
 
 
 
-The environment was built with cuda118 and torch 2.7.0. We rely on fla to implement the linear attention model and flame to train target model. 
+The environment was built with cuda118 and torch 2.7.0. We rely on `fla` to implement the linear attention model and `flame` to train target model. 
 ```
 conda create -n laprot-dev python=3.11
 
