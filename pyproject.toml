@@ -1,0 +1,25 @@
+[project]
+name = "laprot"
+version = "0.1.0"
+description = "Linear Attention Protein Model with Flash Linear Attention"
+readme = "README.md"
+authors = [{ name="Yining Yang", email="yining_yang@tamu.edu" }]
+license = { file="LICENSE" }
+requires-python = ">=3.11"
+
+
+dependencies = [
+  "torch>=2.5",  # the author use torch==2.7
+  "flash-linear-attention @ file://../flash-linear-attention",
+  "transformers>=4.45.0",
+  "datasets>=3.3.0",
+  "einops",
+  "ninja",
+]
+
+[project.optional-dependencies]
+conv1d = ["causal-conv1d>=1.4.0"]
+dev = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=45", "wheel"]
