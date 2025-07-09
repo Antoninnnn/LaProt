@@ -15,7 +15,7 @@ dependencies = [
   "accelerate>=0.26.0",
   "datasets>=3.3.0",
   "causal-conv1d>=1.4.0"   # Set as default for convenience
-  "mamba-ssm"
+  "mamba-ssm",
   "einops",
   "ninja",
 ]
