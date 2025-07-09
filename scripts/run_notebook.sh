@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=pannot_pretrain
+#SBATCH --job-name=laprot_pretrain_dev
 #SBATCH --output=logs/laprot_jupyternotebook_%j.out
 #SBATCH --error=logs/laprot_jupyternotebook_%j.err
 #SBATCH --partition=gpu

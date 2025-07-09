@@ -68,6 +68,32 @@ pip install -e .
 - FLA and FLAME are optimized for high-throughput linear attention and efficient protein modeling.
 
 
+(
+  
+  Persional note:
+
+```
+# Set CUDA environment variables on Grace HPRC of TAMU
+export LD_LIBRARY_PATH=$EBROOTCUDA/lib64:$LD_LIBRARY_PATH
+
+# Set Hugging Face cache directory to a writable location
+export HF_HOME=$SCRATCH/hf_cache
+
+#Set the Torch cache directory in the $SCRATCH
+
+export TORCH_HOME=$SCRATCH/.cache/torch
+
+# # Create the directory if it doesn't exist
+# mkdir -p $TRANSFORMERS_CACHE
+
+
+```
+
+
+
+
+)
+
 ## 📁 Repository Structure (To be added)
 
 ```bash

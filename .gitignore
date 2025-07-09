@@ -1,1 +1,7 @@
 third-party/*
+asset/*
+data/*
+laprot_rwkv6_protein/*
+fla_mamba2_protein/*
+logs/*
+wandb/*
