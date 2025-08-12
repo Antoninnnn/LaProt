@@ -104,13 +104,16 @@ class ProteinTrainer(Trainer):
 
         
 training_args = TrainingArguments(
-    output_dir="laprot_rwkv6_protein",
+    output_dir="laprot_rwkv6_protein_sm_data_lr_4e-4",
     per_device_train_batch_size=8,
     gradient_accumulation_steps=4,
     bf16=True,
+    learning_rate=4e-4,
+    lr_scheduler_type="cosine",
     num_train_epochs=1,
+    warmup_ratio=0.03,
     logging_steps=100,
-    save_steps=2000,
+    save_steps=9000,
 )
 
 trainer = ProteinTrainer(
